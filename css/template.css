@@ -1,0 +1,1181 @@
+
+.phpdocumentor-content {
+    position: relative;
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.phpdocumentor-content > section:first-of-type {
+    width: 75%;
+    flex: 1 1 auto;
+}
+
+@media (min-width: 1900px) {
+    .phpdocumentor-content > section:first-of-type {
+        width: 100%;
+        flex: 1 1 auto;
+    }
+}
+
+.phpdocumentor .phpdocumentor-content__title {
+    margin-top: 0;
+}
+.phpdocumentor-summary {
+    font-style: italic;
+}
+.phpdocumentor-description {
+    margin-bottom: var(--spacing-md);
+}
+.phpdocumentor-element {
+    position: relative;
+}
+
+.phpdocumentor-element .phpdocumentor-element {
+    border: 1px solid var(--primary-color-lighten);
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-xs);
+    border-radius: 5px;
+}
+
+.phpdocumentor-element.-deprecated .phpdocumentor-element__name {
+    text-decoration: line-through;
+}
+
+@media (min-width: 550px) {
+    .phpdocumentor-element .phpdocumentor-element {
+        margin-bottom: var(--spacing-lg);
+        padding: var(--spacing-md);
+    }
+}
+
+.phpdocumentor-element__modifier {
+    font-size: var(--text-xxs);
+    padding: calc(var(--spacing-base-size) / 4) calc(var(--spacing-base-size) / 2);
+    color: var(--text-color);
+    background-color: var(--light-gray);
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.phpdocumentor .phpdocumentor-elements__header {
+    margin-top: var(--spacing-xxl);
+    margin-bottom: var(--spacing-lg);
+}
+
+.phpdocumentor .phpdocumentor-element__name {
+    line-height: 1;
+    margin-top: 0;
+    font-weight: 300;
+    font-size: var(--text-lg);
+    word-break: break-all;
+    margin-bottom: var(--spacing-sm);
+}
+
+@media (min-width: 550px) {
+    .phpdocumentor .phpdocumentor-element__name {
+        font-size: var(--text-xl);
+        margin-bottom: var(--spacing-xs);
+    }
+}
+
+@media (min-width: 1200px) {
+    .phpdocumentor .phpdocumentor-element__name {
+        margin-bottom: var(--spacing-md);
+    }
+}
+
+.phpdocumentor-element__package,
+.phpdocumentor-element__extends,
+.phpdocumentor-element__implements {
+    display: block;
+    font-size: var(--text-xxs);
+    font-weight: normal;
+    opacity: .7;
+}
+
+.phpdocumentor-element__package .phpdocumentor-breadcrumbs {
+    display: inline;
+}
+.phpdocumentor .phpdocumentor-signature {
+    display: block;
+    font-size: var(--text-sm);
+    border: 1px solid #f0f0f0;
+    margin-bottom: calc(var(--spacing-sm));
+}
+
+.phpdocumentor .phpdocumentor-signature.-deprecated .phpdocumentor-signature__name {
+    text-decoration: line-through;
+}
+
+@media (min-width: 550px) {
+    .phpdocumentor .phpdocumentor-signature {
+        margin-left: calc(var(--spacing-xl) * -1);
+        width: calc(100% + var(--spacing-xl));
+    }
+}
+
+.phpdocumentor-table-of-contents {
+}
+
+.phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry {
+    margin-bottom: var(--spacing-xxs);
+    margin-left: 2rem;
+    display: flex;
+}
+
+.phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry > a {
+    flex: 0 1 auto;
+}
+
+.phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry > a.-deprecated {
+    text-decoration: line-through;
+}
+
+.phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry > span {
+    flex: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry:after {
+    content: '';
+    height: 12px;
+    width: 12px;
+    left: 16px;
+    position: absolute;
+}
+.phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry.-private:after {
+    background: url('data:image/svg+xml;utf8,<svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="4" width="8" height="6" rx="1.4" fill="%23EE6749"/><path d="M2 4C2 3 2.4 1 4 1C5.6 1 6 3 6 4" stroke="%23EE6749" stroke-width="1.4"/></svg>') no-repeat;
+}
+.phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry.-protected:after {
+    left: 13px;
+    background: url('data:image/svg+xml;utf8,<svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="8" height="6" rx="1.4" fill="%23EE9949"/><path d="M5 4C5 3 4.6 1 3 1C1.4 1 1 3 1 4" stroke="%23EE9949" stroke-width="1.4"/></svg>') no-repeat;
+}
+
+.phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry:before {
+    width: 1.25rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    background: transparent url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="hsl(    96, 57%, 60%)"/></svg>') no-repeat center center;
+    content: '';
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    font-size: .75rem;
+    margin-top: .2rem;
+}
+
+.phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry.-method:before {
+    content: 'M';
+    color: '';
+    background-image: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="hsl(    96, 57%, 60%)"/></svg>');
+}
+
+.phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry.-function:before {
+    content: 'M';
+    color: '    96';
+    background-image: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="hsl(    96, 57%, 60%)"/></svg>');
+}
+
+.phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry.-property:before {
+    content: 'P'
+}
+
+.phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry.-constant:before {
+    content: 'C';
+    background-color: transparent;
+    background-image: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="-3.05176e-05" y="9.99998" width="14.1422" height="14.1422" transform="rotate(-45 -3.05176e-05 9.99998)" fill="hsl(    96, 57%, 60%)"/></svg>');
+}
+
+.phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry.-class:before {
+    content: 'C'
+}
+
+.phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry.-interface:before {
+    content: 'I'
+}
+
+.phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry.-trait:before {
+    content: 'T'
+}
+
+.phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry.-namespace:before {
+    content: 'N'
+}
+
+.phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry.-package:before {
+    content: 'P'
+}
+
+.phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry.-enum:before {
+    content: 'E'
+}
+
+.phpdocumentor-table-of-contents dd {
+    font-style: italic;
+    margin-left: 2rem;
+}
+.phpdocumentor-element-found-in {
+    display: none;
+}
+
+@media (min-width: 550px) {
+    .phpdocumentor-element-found-in {
+        display: block;
+        font-size: var(--text-sm);
+        color: gray;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .phpdocumentor-element-found-in {
+        position: absolute;
+        top: var(--spacing-sm);
+        right: var(--spacing-sm);
+        font-size: var(--text-sm);
+        margin-bottom: 0;
+    }
+}
+
+.phpdocumentor-element-found-in .phpdocumentor-element-found-in__source {
+    flex: 0 1 auto;
+    display: inline-flex;
+}
+
+.phpdocumentor-element-found-in .phpdocumentor-element-found-in__source:after {
+    width: 1.25rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    background: transparent url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="gray"><path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z" stroke="gray" stroke-width="1.4"/></svg>') no-repeat center center;
+    content: '';
+    left: 0;
+    border-radius: 50%;
+    font-weight: 600;
+    text-align: center;
+    font-size: .75rem;
+    margin-top: .2rem;
+}
+.phpdocumentor-class-graph {
+    width: 100%; height: 600px; border:1px solid black; overflow: hidden
+}
+
+.phpdocumentor-class-graph__graph {
+    width: 100%;
+}
+.phpdocumentor-tag-list__definition {
+    display: flex;
+}
+
+.phpdocumentor-tag-link {
+    margin-right: var(--spacing-sm);
+}
+<style>
+    /* ===========================
+       Logo Styling
+       =========================== */
+    .phpdocumentor-sidebar__logo {
+        padding: 1.5rem 1rem;
+        text-align: center;
+        border-bottom: 1px solid #e0e0e0;
+        margin-bottom: 1rem;
+    }
+
+    .phpdocumentor-sidebar__logo img {
+        max-width: 100%;
+        height: auto;
+        max-height: 60px;
+    }
+
+    /* ===========================
+       Collapsable Navigation
+       =========================== */
+    .phpdocumentor-sidebar__category-collapsable,
+    .phpdocumentor-sidebar__submenu {
+        border: none;
+        margin-bottom: 0.5rem;
+    }
+
+    .phpdocumentor-sidebar__category-collapsable summary,
+    .phpdocumentor-sidebar__submenu-header {
+        cursor: pointer;
+        user-select: none;
+        list-style: none;
+        padding: 0.75rem 1rem;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: background-color 0.2s ease;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .phpdocumentor-sidebar__category-collapsable summary:hover,
+    .phpdocumentor-sidebar__submenu-header:hover {
+        background-color: #f5f5f5;
+    }
+
+    .phpdocumentor-sidebar__category-collapsable summary::-webkit-details-marker,
+    .phpdocumentor-sidebar__submenu-header::-webkit-details-marker {
+        display: none;
+    }
+
+    /* Plus/minus icon on the right */
+    .phpdocumentor-sidebar__category-collapsable summary::after,
+    .phpdocumentor-sidebar__submenu-header::after {
+        content: '+';
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        text-align: center;
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #666;
+        flex-shrink: 0;
+    }
+
+    .phpdocumentor-sidebar__category-collapsable[open] summary::after,
+    .phpdocumentor-sidebar__submenu[open] > .phpdocumentor-sidebar__submenu-header::after {
+        content: '−';
+    }
+
+    .phpdocumentor-sidebar__category-content {
+        padding: 0.5rem 0;
+    }
+
+    /* Nested submenu styling */
+    .phpdocumentor-sidebar__submenu {
+        margin-left: 0;
+    }
+
+    .phpdocumentor .phpdocumentor-sidebar .phpdocumentor-sidebar__submenu .phpdocumentor-list {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .phpdocumentor-sidebar__submenu-header {
+        font-weight: 500;
+        font-size: 0.95rem;
+        padding: 0;
+    }
+
+    /* ===========================
+       Active Navigation Item
+       =========================== */
+    .phpdocumentor-sidebar a.phpdocumentor--active,
+    .phpdocumentor-sidebar a:focus,
+    .phpdocumentor-sidebar a[aria-current="page"] {
+        background-color: #e3f2fd;
+        color: #1976d2;
+        font-weight: 600;
+        border-left: 3px solid #1976d2;
+        padding-left: calc(1rem - 3px);
+    }
+
+    .phpdocumentor-sidebar a:hover {
+        background-color: #f5f5f5;
+    }
+
+    /* ===========================
+       Remove old category styling
+       =========================== */
+    .phpdocumentor-sidebar__category {
+        border: none;
+        margin-bottom: 0;
+    }
+
+    /* ===========================
+       Deprecation Report Link
+       =========================== */
+    .phpdocumentor-sidebar__category-link {
+        margin-top: 1rem;
+        padding: 0.5rem 0;
+        padding-left: 1rem;
+    }
+
+    .phpdocumentor-sidebar__deprecation-link {
+        display: block;
+        padding: 0.75rem 1rem;
+        font-weight: 600;
+        font-size: 1rem;
+        color: #333;
+        text-decoration: none;
+        transition: background-color 0.2s ease;
+    }
+
+    .phpdocumentor-sidebar__deprecation-link:hover {
+        background-color: #f5f5f5;
+    }
+
+    /* ===========================
+       Hide default h4 root namespaces (we use details instead)
+       =========================== */
+    .phpdocumentor-sidebar__root-namespace {
+        display: none;
+    }
+
+    /* ===========================
+       Sidebar Search
+       =========================== */
+    .phpdocumentor-sidebar__search {
+        padding: 0 1rem 1rem 1rem;
+        border-bottom: 1px solid #e0e0e0;
+        margin-bottom: 1rem;
+    }
+
+    .sidebar-search-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar-search-input {
+        width: 100%;
+        padding: 0.5rem 2rem 0.5rem 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        font-family: inherit;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .sidebar-search-input:focus {
+        outline: none;
+        border-color: #1976d2;
+        box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.1);
+    }
+
+    .sidebar-search-clear {
+        position: absolute;
+        right: 0.5rem;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        line-height: 1;
+        color: #666;
+        cursor: pointer;
+        padding: 0.25rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .sidebar-search-clear:hover {
+        background-color: #f0f0f0;
+        color: #333;
+    }
+
+    .sidebar-search-no-results {
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+        text-align: center;
+        color: #666;
+        font-size: 0.9rem;
+        font-style: italic;
+    }
+
+    /* Search hidden class */
+    .search-hidden {
+        display: none !important;
+    }
+
+    /* Highlighted search matches */
+    mark {
+        background-color: #fff59d;
+        color: #000;
+        padding: 0.1rem 0.2rem;
+        border-radius: 2px;
+        font-weight: 600;
+    }
+
+    /* Smooth transitions for search filtering */
+    .phpdocumentor-sidebar details,
+    .phpdocumentor-sidebar li {
+        transition: opacity 0.15s ease;
+    }
+
+    /* ===========================
+       Remove border from main title
+       =========================== */
+    .phpdocumentor-title {
+        border-right: none !important;
+    }
+
+    /* ===========================
+       Dark Mode Toggle Slider
+       =========================== */
+    .phpdocumentor-header__theme-toggle-label {
+        font-size: 1.2rem;
+        line-height: 1;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    /* Moon icon always visible, color changes with theme */
+    [data-theme="dark"] .phpdocumentor-header__theme-toggle-label {
+        color: white;
+    }
+
+    /* Toggle Switch */
+    .phpdocumentor-header__theme-toggle-switch {
+        position: relative;
+        display: inline-block;
+        width: 48px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    /* Hide default checkbox */
+    .phpdocumentor-header__theme-toggle-input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        position: absolute;
+    }
+
+    /* The slider */
+    .phpdocumentor-header__theme-toggle-slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: background-color 0.3s ease;
+        border-radius: 24px;
+    }
+
+    /* Slider knob */
+    .phpdocumentor-header__theme-toggle-slider:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: transform 0.3s ease;
+        border-radius: 50%;
+    }
+
+    /* Checked state - Blesta blue */
+    .phpdocumentor-header__theme-toggle-input:checked + .phpdocumentor-header__theme-toggle-slider {
+        background-color: hsl(207, 70%, 50%);
+    }
+
+    /* Move knob when checked */
+    .phpdocumentor-header__theme-toggle-input:checked + .phpdocumentor-header__theme-toggle-slider:before {
+        transform: translateX(24px);
+    }
+
+    /* Focus state for accessibility */
+    .phpdocumentor-header__theme-toggle-input:focus + .phpdocumentor-header__theme-toggle-slider {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+    }
+
+    /* Hover effect */
+    .phpdocumentor-header__theme-toggle-switch:hover .phpdocumentor-header__theme-toggle-slider {
+        opacity: 0.9;
+    }
+
+    /* Position toggle in header */
+    .phpdocumentor-header {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    /* Give each header item flex 1 */
+    .phpdocumentor-title,
+    .phpdocumentor-header__theme-toggle-wrapper,
+    .phpdocumentor-search {
+        flex: 1;
+    }
+
+    /* Justify toggle to the right with padding */
+    .phpdocumentor-header__theme-toggle-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        justify-content: flex-end;
+        padding-right: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 1000px) {
+        .phpdocumentor-header__theme-toggle-wrapper {
+            padding-right: 0;
+        }
+
+        .phpdocumentor-header__theme-toggle-label {
+            font-size: 0.85rem;
+        }
+    }
+
+    /* Hide label on very small screens */
+    @media (max-width: 400px) {
+        .phpdocumentor-header__theme-toggle-label {
+            display: none;
+        }
+    }
+
+    /* ===========================
+       Mobile Header Fixes
+       =========================== */
+
+    /* Remove title hover effects - keep base transform but disable perspective/translate */
+    .phpdocumentor-title__link:hover {
+        font-weight: normal !important;
+    }
+
+    /* Keep the scale transform but remove perspective effect on hover */
+    .phpdocumentor-title__link {
+        transform: scale(var(--header-title-scale)) !important;
+    }
+
+    /* Disable perspective transform on hover at all breakpoints */
+    .phpdocumentor-title__link:hover {
+        transform: scale(var(--header-title-scale)) !important;
+    }
+
+    /* Style sidebar menu icon when it's in the header */
+    .phpdocumentor-header .phpdocumentor-sidebar__menu-icon {
+        display: none; /* Hidden on desktop */
+        font-size: 1.5rem;
+        color: white;
+        background: none;
+        margin: 0;
+        padding: 0.25rem;
+        text-transform: none;
+        letter-spacing: normal;
+        cursor: pointer;
+        order: 2; /* Place at end */
+    }
+
+    /* Show sidebar menu icon on true mobile only */
+    @media (max-width: 550px) {
+        .phpdocumentor-header .phpdocumentor-sidebar__menu-icon {
+            display: block;
+        }
+
+        /* Keep header items on same line on mobile */
+        .phpdocumentor-header {
+            gap: 0.5rem;
+        }
+
+        /* Make search narrower on mobile to fit */
+        .phpdocumentor-search {
+            flex: 1 1 auto;
+            min-width: 0;
+        }
+
+        /* Compact toggle wrapper */
+        .phpdocumentor-header__theme-toggle-wrapper {
+            flex: 0 0 auto;
+        }
+
+        /* Title takes only needed space */
+        .phpdocumentor-title {
+            flex: 0 0 auto;
+            min-width: 0;
+        }
+
+        /* Hide sidebar by default on mobile */
+        .phpdocumentor-sidebar {
+            max-height: 0 !important;
+            overflow: hidden !important;
+            padding-top: 0 !important;
+        }
+
+        /* Show sidebar when checkbox is checked (checkbox is direct child of body, sibling to main) */
+        #sidebar-button:checked ~ main .phpdocumentor-sidebar {
+            max-height: 100% !important;
+            overflow: visible !important;
+            padding-top: 1rem !important;
+        }
+    }
+
+    /* ===========================
+       Dark Mode Section Separation
+       =========================== */
+
+    /* Sidebar - Distinct background with border */
+    [data-theme="dark"] .phpdocumentor-sidebar {
+        background-color: #242424;
+        border: 1px solid #404040;
+    }
+
+    /* Sidebar logo border */
+    [data-theme="dark"] .phpdocumentor-sidebar__logo {
+        border-bottom-color: #404040;
+    }
+
+    /* Sidebar search - no border, add top padding */
+    [data-theme="dark"] .phpdocumentor-sidebar__search {
+        border-bottom: none;
+        padding-top: 1rem;
+    }
+
+    /* Main content area - Elevated background with border */
+    [data-theme="dark"] .phpdocumentor-content {
+        background-color: #202020;
+        padding: 2rem;
+        border: 1px solid #404040;
+    }
+
+    /* Only top-level sections get borders and styling */
+    [data-theme="dark"] .phpdocumentor-content > section {
+        background-color: #242424;
+        border: 1px solid #404040;
+        border-radius: 4px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Nested sections don't get borders */
+    [data-theme="dark"] .phpdocumentor-content section section {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    /* Enhanced hover states */
+    [data-theme="dark"] .phpdocumentor-sidebar__category-collapsable summary:hover,
+    [data-theme="dark"] .phpdocumentor-sidebar__submenu-header:hover {
+        background-color: #2d2d2d;
+    }
+
+    [data-theme="dark"] .phpdocumentor-sidebar a:hover {
+        background-color: #2d2d2d;
+    }
+
+    /* Sidebar input fields in dark mode */
+    [data-theme="dark"] .sidebar-search-input {
+        background-color: #1e1e1e;
+        border-color: #404040;
+        color: #e8e8e8;
+    }
+
+    [data-theme="dark"] .sidebar-search-input:focus {
+        border-color: hsl(var(--primary-color-hue), var(--primary-color-saturation), 60%);
+        box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+    }
+
+    [data-theme="dark"] .sidebar-search-clear:hover {
+        background-color: #2d2d2d;
+        color: #e8e8e8;
+    }
+
+    /* Active navigation item in dark mode */
+    [data-theme="dark"] .phpdocumentor-sidebar a.phpdocumentor--active,
+    [data-theme="dark"] .phpdocumentor-sidebar a:focus,
+    [data-theme="dark"] .phpdocumentor-sidebar a[aria-current="page"] {
+        background-color: rgba(59, 130, 246, 0.15);
+        border-left-color: hsl(var(--primary-color-hue), var(--primary-color-saturation), 60%);
+    }
+
+    /* Search highlight in dark mode */
+    [data-theme="dark"] mark {
+        background-color: #4a5568;
+        color: #fbbf24;
+    }
+
+    /* ===========================
+       Collapsible Sections
+       =========================== */
+
+    /* Style the summary as a clickable header */
+    .phpdocumentor-section-collapsible summary {
+        cursor: pointer;
+        user-select: none;
+        list-style: none;
+        position: relative;
+        padding-right: 2rem;
+    }
+
+    /* Hide default disclosure triangle */
+    .phpdocumentor-section-collapsible summary::-webkit-details-marker {
+        display: none;
+    }
+
+    /* Add custom collapse/expand indicator */
+    .phpdocumentor-section-collapsible summary::after {
+        content: '−';
+        position: absolute;
+        right: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--primary-color);
+        transition: transform 0.2s ease;
+    }
+
+    /* Rotate indicator when collapsed */
+    .phpdocumentor-section-collapsible:not([open]) summary::after {
+        content: '+';
+    }
+
+    /* Hover effect on summary */
+    .phpdocumentor-section-collapsible summary:hover {
+        opacity: 0.8;
+    }
+
+    /* Content padding */
+    .phpdocumentor-section-content {
+        padding-top: 1rem;
+    }
+
+    /* Dark mode adjustments for collapsible sections */
+    [data-theme="dark"] .phpdocumentor-section-collapsible summary::after {
+        color: hsl(var(--primary-color-hue), var(--primary-color-saturation), 70%);
+    }
+
+    /* ===========================
+       TOC (Table of Contents) Styling
+       =========================== */
+
+    /* Make TOC header smaller */
+    .phpdocumentor-toc-header {
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        user-select: none;
+        list-style: none;
+        position: relative;
+        padding-right: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Hide default disclosure triangle */
+    .phpdocumentor-toc-collapsible summary::-webkit-details-marker {
+        display: none;
+    }
+
+    /* Add custom collapse/expand indicator for TOC */
+    .phpdocumentor-toc-collapsible summary::after {
+        content: '+';
+        position: absolute;
+        right: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: var(--primary-color);
+        transition: transform 0.2s ease;
+    }
+
+    /* Indicator when TOC is open */
+    .phpdocumentor-toc-collapsible[open] summary::after {
+        content: '−';
+    }
+
+    /* TOC content padding */
+    .phpdocumentor-toc-content {
+        padding-top: 0.5rem;
+    }
+
+    /* Dark mode TOC adjustments */
+    [data-theme="dark"] .phpdocumentor-toc-collapsible summary::after {
+        color: hsl(var(--primary-color-hue), var(--primary-color-saturation), 70%);
+    }
+
+    /* ===========================
+       Section Header Sizing
+       =========================== */
+
+    /* Make Properties and Methods headers larger */
+    .phpdocumentor-properties .phpdocumentor-elements__header,
+    .phpdocumentor-methods .phpdocumentor-elements__header,
+    .phpdocumentor-constants .phpdocumentor-elements__header {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    /* ===========================
+       TOC Compact Table Format
+       =========================== */
+
+    /* Actual table styling with borders */
+    .phpdocumentor-table-of-contents {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0.5rem 0 1rem 0;
+        border: 1px solid #ddd;
+        font-size: 0.85rem;
+    }
+
+    .phpdocumentor-table-of-contents td {
+        padding: 0.4rem 0.6rem;
+        border: 1px solid #ddd;
+        vertical-align: top;
+    }
+
+    /* First column (name) - narrower */
+    .phpdocumentor-table-of-contents td:first-child {
+        width: 25%;
+        font-weight: 500;
+    }
+
+    /* Second column (description) - wider */
+    .phpdocumentor-table-of-contents td:last-child {
+        width: 75%;
+    }
+
+    /* Alternating row colors for readability */
+    .phpdocumentor-table-of-contents tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    /* Hover effect on rows */
+    .phpdocumentor-table-of-contents tr:hover {
+        background-color: #f0f0f0;
+    }
+
+    /* TOC subsection headers */
+    .phpdocumentor-toc-content h4 {
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-top: 0.75rem;
+        margin-bottom: 0.25rem;
+        color: var(--primary-color);
+    }
+
+    /* Dark mode TOC */
+    [data-theme="dark"] .phpdocumentor-toc-content h4 {
+        color: hsl(var(--primary-color-hue), var(--primary-color-saturation), 70%);
+    }
+
+    [data-theme="dark"] .phpdocumentor-table-of-contents {
+        border-color: #404040;
+    }
+
+    [data-theme="dark"] .phpdocumentor-table-of-contents td {
+        border-color: #404040;
+    }
+
+    [data-theme="dark"] .phpdocumentor-table-of-contents tr:nth-child(even) {
+        background-color: #1e1e1e;
+    }
+
+    [data-theme="dark"] .phpdocumentor-table-of-contents tr:hover {
+        background-color: #2d2d2d;
+    }
+
+    /* ===========================
+       Hide Link Icons (headerlinks) Except on Hover
+       =========================== */
+
+    /* Hide headerlink icons by default */
+    .phpdocumentor-element-found-in__source,
+    a[class*="headerlink"],
+    .phpdocumentor-headerlink {
+        opacity: 0;
+        transition: opacity 0.2s ease;
+    }
+
+    /* Show on hover of parent element */
+    h1:hover .phpdocumentor-headerlink,
+    h2:hover .phpdocumentor-headerlink,
+    h3:hover .phpdocumentor-headerlink,
+    h4:hover .phpdocumentor-headerlink,
+    h5:hover .phpdocumentor-headerlink,
+    h6:hover .phpdocumentor-headerlink,
+    summary:hover a[class*="headerlink"],
+    .phpdocumentor-element-found-in:hover .phpdocumentor-element-found-in__source {
+        opacity: 1;
+    }
+
+    /* Direct hover on the link itself */
+    .phpdocumentor-headerlink:hover,
+    a[class*="headerlink"]:hover,
+    .phpdocumentor-element-found-in__source:hover {
+        opacity: 1;
+    }
+
+    /* ===========================
+       Full Width Layout
+       =========================== */
+
+    /* Remove container width restriction */
+    .phpdocumentor-section {
+        max-width: none !important;
+    }
+
+    /* Make content area full width */
+    .phpdocumentor-content {
+        max-width: none !important;
+        flex: 1;
+    }
+
+    /* ===========================
+       Header Logo Styling
+       =========================== */
+
+    .phpdocumentor-title__link {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        text-decoration: none;
+    }
+
+    .phpdocumentor-title__logo {
+        height: 2rem;
+        width: auto;
+        display: block;
+    }
+
+    .phpdocumentor-title__text {
+        display: inline-block;
+    }
+
+    /* ===========================
+       Hide Icons in TOC
+       =========================== */
+
+    /* Hide all headerlink icons within TOC */
+    .phpdocumentor-toc-content .phpdocumentor-headerlink,
+    .phpdocumentor-toc-content a[class*="headerlink"] {
+        display: none !important;
+    }
+
+    /* ===========================
+       Hide TOC on Desktop (Class Pages Only)
+       =========================== */
+
+    /* Hide TOC on class pages on desktop (screens wider than 1000px) */
+    @media (min-width: 1000px) {
+        .phpdocumentor-element.-class .phpdocumentor-toc-collapsible,
+        .phpdocumentor-element.-interface .phpdocumentor-toc-collapsible,
+        .phpdocumentor-element.-trait .phpdocumentor-toc-collapsible {
+            display: none;
+        }
+    }
+
+    /* ===========================
+       Remove TOC Icons
+       =========================== */
+
+    /* Remove default circular icons from TOC entries */
+    .phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry:before {
+        display: none !important;
+    }
+
+    /* Also remove the left margin that was making space for the icons */
+    .phpdocumentor-table-of-contents .phpdocumentor-table-of-contents__entry {
+        margin-left: 0 !important;
+    }
+
+    /* ===========================
+       Tree Branch Visualization for Navigation
+       =========================== */
+
+    /* Root category content */
+    .phpdocumentor-sidebar__category-content {
+        position: relative;
+    }
+
+    /* First level details (packages like "blesta") */
+    .phpdocumentor-sidebar__category-content > details {
+        position: relative;
+        padding-left: 1.5rem;
+        padding-right: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Vertical line for first level */
+    .phpdocumentor-sidebar__category-content > details::before {
+        content: '';
+        position: absolute;
+        left: 0.5rem;
+        top: 1.5rem;
+        bottom: -0.5rem;
+        width: 1px;
+        background-color: #555;
+    }
+
+    /* Hide vertical line on last child */
+    .phpdocumentor-sidebar__category-content > details:last-child::before {
+        display: none;
+    }
+
+    /* Nested submenu styling */
+    .phpdocumentor-sidebar__submenu {
+        position: relative;
+    }
+
+    /* Nested lists */
+    .phpdocumentor-sidebar__submenu .phpdocumentor-list {
+        position: relative;
+        margin-left: 0.5rem;
+        padding-left: 1rem;
+    }
+
+    /* Vertical line for nested items */
+    .phpdocumentor-sidebar__submenu .phpdocumentor-list::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background-color: #555;
+    }
+
+    /* List items */
+    .phpdocumentor-sidebar__submenu .phpdocumentor-list > li {
+        position: relative;
+        list-style: none;
+        padding-left: 1rem;
+    }
+
+    /* Horizontal branch to list items */
+    .phpdocumentor-sidebar__submenu .phpdocumentor-list > li::before {
+        content: '';
+        position: absolute;
+        left: -0.4rem;
+        top: 0.75rem;
+        width: 0.9rem;
+        height: 1px;
+        background-color: #555;
+    }
+
+    /* L-corner for last items */
+    .phpdocumentor-sidebar__submenu .phpdocumentor-list > li:last-child::after {
+        content: '';
+        position: absolute;
+        left: -0.4rem;
+        top: 0.75rem;
+        bottom: 0;
+        width: 1px;
+        background-color: #1a1a1a;
+    }
+
+    /* Dark mode tree branches */
+    [data-theme="dark"] .phpdocumentor-sidebar__category-content > details::before,
+    [data-theme="dark"] .phpdocumentor-sidebar__category-content > details > summary::before,
+    [data-theme="dark"] .phpdocumentor-sidebar__submenu .phpdocumentor-list::before,
+    [data-theme="dark"] .phpdocumentor-sidebar__submenu .phpdocumentor-list > li::before,
+    [data-theme="dark"] .phpdocumentor-sidebar__submenu .phpdocumentor-list > li > details > summary::before {
+        background-color: #666;
+    }
+
+    [data-theme="dark"] .phpdocumentor-sidebar__submenu .phpdocumentor-list > li:last-child::after {
+        background-color: #1a1a1a;
+    }
+
+</style>
+.phpdocumentor-uml-diagram svg {
+    cursor: zoom-in;
+}
