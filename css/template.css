@@ -1035,6 +1035,15 @@
         width: auto;
         display: block;
     }
+    .dark_logo {
+        display:none;
+    }
+    [data-theme="dark"] .phpdocumentor-title__logo {
+        display:none;
+    }
+    [data-theme="dark"] .dark_logo {
+        display:block;
+    }
 
     .phpdocumentor-title__text {
         display: inline-block;
