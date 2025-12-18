@@ -15151,186 +15151,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/TcpdfWrapper.html#property_direction"
         },                {
-            "fqsen": "\\Messenger",
-            "name": "Messenger",
-            "summary": "Abstract\u0020class\u0020that\u0020all\u0020Messengers\u0020must\u0020extend",
-            "url": "classes/Messenger.html"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003AgetName\u0028\u0029",
-            "name": "getName",
-            "summary": "Returns\u0020the\u0020name\u0020of\u0020this\u0020messenger",
-            "url": "classes/Messenger.html#method_getName"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003AgetDescription\u0028\u0029",
-            "name": "getDescription",
-            "summary": "Returns\u0020the\u0020description\u0020of\u0020this\u0020messenger",
-            "url": "classes/Messenger.html#method_getDescription"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003AgetVersion\u0028\u0029",
-            "name": "getVersion",
-            "summary": "Returns\u0020the\u0020version\u0020of\u0020this\u0020messenger",
-            "url": "classes/Messenger.html#method_getVersion"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003AgetAuthors\u0028\u0029",
-            "name": "getAuthors",
-            "summary": "Returns\u0020the\u0020name\u0020and\u0020URL\u0020for\u0020the\u0020authors\u0020of\u0020this\u0020messenger",
-            "url": "classes/Messenger.html#method_getAuthors"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003Ainstall\u0028\u0029",
-            "name": "install",
-            "summary": "Performs\u0020any\u0020necessary\u0020bootstraping\u0020actions.\u0020Sets\u0020Input\u0020errors\u0020on\nfailure,\u0020preventing\u0020the\u0020messenger\u0020from\u0020being\u0020added.",
-            "url": "classes/Messenger.html#method_install"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003Aupgrade\u0028\u0029",
-            "name": "upgrade",
-            "summary": "Performs\u0020migration\u0020of\u0020data\u0020from\u0020\u0024current_version\u0020\u0028the\u0020current\u0020installed\u0020version\u0029\nto\u0020the\u0020given\u0020file\u0020set\u0020version.\u0020Sets\u0020Input\u0020errors\u0020on\u0020failure,\u0020preventing\nthe\u0020messenger\u0020from\u0020being\u0020upgraded.",
-            "url": "classes/Messenger.html#method_upgrade"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003Auninstall\u0028\u0029",
-            "name": "uninstall",
-            "summary": "Performs\u0020any\u0020necessary\u0020cleanup\u0020actions.\u0020Sets\u0020Input\u0020errors\u0020on\u0020failure\nafter\u0020the\u0020messenger\u0020has\u0020been\u0020uninstalled.",
-            "url": "classes/Messenger.html#method_uninstall"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003Asend\u0028\u0029",
-            "name": "send",
-            "summary": "Send\u0020a\u0020message.",
-            "url": "classes/Messenger.html#method_send"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003AgetTypes\u0028\u0029",
-            "name": "getTypes",
-            "summary": "Returns\u0020a\u0020list\u0020of\u0020the\u0020message\u0020types\u0020supported\u0020by\u0020the\u0020messenger.",
-            "url": "classes/Messenger.html#method_getTypes"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003AgetConfigurationFields\u0028\u0029",
-            "name": "getConfigurationFields",
-            "summary": "Returns\u0020all\u0020fields\u0020used\u0020when\u0020setting\u0020up\u0020a\u0020messenger,\u0020including\u0020any\njavascript\u0020to\u0020execute\u0020when\u0020the\u0020page\u0020is\u0020rendered\u0020with\u0020these\u0020fields.",
-            "url": "classes/Messenger.html#method_getConfigurationFields"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003AsetMeta\u0028\u0029",
-            "name": "setMeta",
-            "summary": "Updates\u0020the\u0020meta\u0020data\u0020for\u0020this\u0020messenger",
-            "url": "classes/Messenger.html#method_setMeta"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003AgetLogo\u0028\u0029",
-            "name": "getLogo",
-            "summary": "Returns\u0020the\u0020relative\u0020path\u0020from\u0020this\u0020messenger\u0027s\u0020directory\u0020to\u0020the\u0020logo\u0020for\nthis\u0020messenger.\u0020Defaults\u0020to\u0020views\/default\/images\/logo.png",
-            "url": "classes/Messenger.html#method_getLogo"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003AsetMessenger\u0028\u0029",
-            "name": "setMessenger",
-            "summary": "Sets\u0020the\u0020messenger\u0020to\u0020be\u0020used\u0020for\u0020any\u0020subsequent\u0020requests",
-            "url": "classes/Messenger.html#method_setMessenger"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003AgetMessenger\u0028\u0029",
-            "name": "getMessenger",
-            "summary": "Fetches\u0020the\u0020messenger\u0020currently\u0020in\u0020use",
-            "url": "classes/Messenger.html#method_getMessenger"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003AgetMessengerMeta\u0028\u0029",
-            "name": "getMessengerMeta",
-            "summary": "Retrieves\u0020a\u0020list\u0020of\u0020messenger\u0020meta\u0020data",
-            "url": "classes/Messenger.html#method_getMessengerMeta"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003Aerrors\u0028\u0029",
-            "name": "errors",
-            "summary": "Return\u0020all\u0020validation\u0020errors\u0020encountered",
-            "url": "classes/Messenger.html#method_errors"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003AsetMessage\u0028\u0029",
-            "name": "setMessage",
-            "summary": "Sets\u0020a\u0020message",
-            "url": "classes/Messenger.html#method_setMessage"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003AgetMessages\u0028\u0029",
-            "name": "getMessages",
-            "summary": "Retrieves\u0020a\u0020set\u0020of\u0020messages\u0020set\u0020by\u0020the\u0020messenger",
-            "url": "classes/Messenger.html#method_getMessages"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003AhttpRequest\u0028\u0029",
-            "name": "httpRequest",
-            "summary": "Process\u0020a\u0020request\u0020over\u0020HTTP\u0020using\u0020the\u0020supplied\u0020method\u0020type,\u0020url\u0020and\u0020parameters.",
-            "url": "classes/Messenger.html#method_httpRequest"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003Alog\u0028\u0029",
-            "name": "log",
-            "summary": "Attempts\u0020to\u0020log\u0020the\u0020given\u0020info\u0020to\u0020the\u0020messenger\u0020log.",
-            "url": "classes/Messenger.html#method_log"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003AloadConfig\u0028\u0029",
-            "name": "loadConfig",
-            "summary": "Loads\u0020a\u0020given\u0020config\u0020file",
-            "url": "classes/Messenger.html#method_loadConfig"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003Atranslate\u0028\u0029",
-            "name": "translate",
-            "summary": "Translate\u0020the\u0020given\u0020str,\u0020or\u0020passthrough\u0020if\u0020no\u0020translation\u0020et",
-            "url": "classes/Messenger.html#method_translate"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003A\u0024config",
-            "name": "config",
-            "summary": "",
-            "url": "classes/Messenger.html#property_config"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003A\u0024base_uri",
-            "name": "base_uri",
-            "summary": "",
-            "url": "classes/Messenger.html#property_base_uri"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003A\u0024messenger",
-            "name": "messenger",
-            "summary": "",
-            "url": "classes/Messenger.html#property_messenger"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003A\u0024messages",
-            "name": "messages",
-            "summary": "",
-            "url": "classes/Messenger.html#property_messages"
-        },                {
-            "fqsen": "\\Messenger\u003A\u003A\u0024log_group",
-            "name": "log_group",
-            "summary": "",
-            "url": "classes/Messenger.html#property_log_group"
-        },                {
-            "fqsen": "\\Messengers",
-            "name": "Messengers",
-            "summary": "Factory\u0020class\u0020for\u0020creating\u0020Messenger\u0020objects",
-            "url": "classes/Messengers.html"
-        },                {
-            "fqsen": "\\Messengers\u003A\u003Acreate\u0028\u0029",
-            "name": "create",
-            "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020requested\u0020messenger",
-            "url": "classes/Messengers.html#method_create"
-        },                {
-            "fqsen": "\\Twilio",
-            "name": "Twilio",
-            "summary": "Twilio\u0020Messenger",
-            "url": "classes/Twilio.html"
-        },                {
-            "fqsen": "\\Twilio\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Initializes\u0020the\u0020messenger.",
-            "url": "classes/Twilio.html#method___construct"
-        },                {
-            "fqsen": "\\Twilio\u003A\u003AgetConfigurationFields\u0028\u0029",
-            "name": "getConfigurationFields",
-            "summary": "Returns\u0020all\u0020fields\u0020used\u0020when\u0020setting\u0020up\u0020a\u0020messenger,\u0020including\u0020any\njavascript\u0020to\u0020execute\u0020when\u0020the\u0020page\u0020is\u0020rendered\u0020with\u0020these\u0020fields.",
-            "url": "classes/Twilio.html#method_getConfigurationFields"
-        },                {
-            "fqsen": "\\Twilio\u003A\u003AsetMeta\u0028\u0029",
-            "name": "setMeta",
-            "summary": "Updates\u0020the\u0020meta\u0020data\u0020for\u0020this\u0020messenger",
-            "url": "classes/Twilio.html#method_setMeta"
-        },                {
-            "fqsen": "\\Twilio\u003A\u003Asend\u0028\u0029",
-            "name": "send",
-            "summary": "Send\u0020a\u0020message.",
-            "url": "classes/Twilio.html#method_send"
-        },                {
-            "fqsen": "\\Twilio\u003A\u003AgetApi\u0028\u0029",
-            "name": "getApi",
-            "summary": "Gets\u0020an\u0020instance\u0020of\u0020the\u0020Twilio\u0020API.",
-            "url": "classes/Twilio.html#method_getApi"
-        },                {
             "fqsen": "\\AmazonS3",
             "name": "AmazonS3",
             "summary": "Amazon\u0020S3\u0020component\u0020that\u0020backs\u0020up\u0020file\u0020data.",
@@ -27913,7 +27733,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\DomainsTlds\u003A\u003AgetDuplicateTlds\u0028\u0029",
             "name": "getDuplicateTlds",
-            "summary": "Gets\u0020all\u0020TLDs\u0020that\u0020have\u0020multiple\u0020active\u0020packages\u0020for\u0020the\u0020same\u0020TLD\u0020and\u0020module",
+            "summary": "Gets\u0020all\u0020TLDs\u0020that\u0020have\u0020active\u0020packages\u0020other\u0020than\u0020the\u0020primary\u0020a\u0020TLD\u0020and\u0020module",
             "url": "classes/DomainsTlds.html#method_getDuplicateTlds"
         },                {
             "fqsen": "\\DomainsTlds\u003A\u003AgetDuplicateTldPackages\u0028\u0029",
@@ -30575,6 +30395,11 @@ Search.appendIndex(
             "name": "edit",
             "summary": "Edits\u0020a\u0020department",
             "url": "classes/SupportManagerDepartments.html#method_edit"
+        },                {
+            "fqsen": "\\SupportManagerDepartments\u003A\u003AupdateTicketFeedbackReminderFlag\u0028\u0029",
+            "name": "updateTicketFeedbackReminderFlag",
+            "summary": "Marks\u0020all\u0020open\u0020tickets\u0020for\u0020a\u0020given\u0020department\u0020to\u0020either\u0020request\u0020feedback\u0020or\u0020not",
+            "url": "classes/SupportManagerDepartments.html#method_updateTicketFeedbackReminderFlag"
         },                {
             "fqsen": "\\SupportManagerDepartments\u003A\u003AeditFields\u0028\u0029",
             "name": "editFields",
